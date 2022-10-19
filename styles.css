@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0px;
+    /* box-sizing: border-box; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+header {
+    background-color: rgb(35, 59, 59);
+    color: white;
+    padding: 8px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.left-header {
+    display: flex;
+    gap: 10px;
+}
+.right-header {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.login {
+    display: flex;
+    align-items: center;
+    background: darksalmon;
+    border: 0px;
+    border-radius: 8px;
+    padding: 0px 20px
+}
+.login:hover {
+    background-color: rgb(219, 72, 56);
+    cursor: pointer;
+}
+.login a {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.nav-bar {
+    padding: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+}
+ul {
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+    background: salmon;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+.dropdown {
+    float: right;
+}
+li a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(35, 59, 59);
+    font-weight: bold;
+    font-size: 20px;
+}
+.dropdown-btn {
+    padding: 10px 25px;
+    margin-right: 5px;
+}
+ul li a:hover {
+    background: rgb(213, 75, 59);
+    color: white;
+}
+a.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    background-color: salmon;
+    z-index: 1;
+    width: 200px;
+    border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content li {
+    float: none;
+}
+.dropdown-content a {
+    width: 100%;
+    text-align: start;
+}
+.content {
+    display: flex;
+    background-color: rgb(35, 59, 59);
+    padding: 10px;
+    height: 100%;
+    gap: 50px;
+}
+.main-content {
+    flex: 5;
+    background: rgb(14, 24, 24);
+}
+.sidebar {
+    flex: 1;
+    background:rgb(14, 24, 24);
+}
+.right-content {
+    flex: 1;
+    background-color: rgb(14, 24, 24);
+}
