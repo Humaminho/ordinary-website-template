@@ -16,7 +16,7 @@ body {
     align-items: stretch;
 }
 header {
-    background-color: rgb(35, 59, 59);
+    background-color: rgb(16, 27, 27);
     color: white;
     padding: 8px 5px 5px 5px;
     display: flex;
@@ -64,7 +64,8 @@ nav {
     margin: 0px;
     /* position: -webkit-sticky; */
     position: sticky;
-    background: salmon;
+    top: 0;
+    background: rgb(223, 96, 82);
 }
 .left-nav {
     display: flex;
@@ -113,7 +114,6 @@ nav a:hover {
 }
 .content {
     display: flex;
-    flex: 2;
     background-color: rgb(35, 59, 59);
     padding: 10px;
     height: 100%;
@@ -121,22 +121,20 @@ nav a:hover {
     padding: 30px 25px;
 }
 .main-content {
-    flex: ;
+    flex: 6 1 0;
     background: rgb(14, 24, 24);
 }
-.sidebar {
-    flex: 1;
-    background:rgb(14, 24, 24);
-}
 .right-content {
-    flex: 1;
+    flex: 1 5 0;
     background-color: rgb(14, 24, 24);
 }
 .sidebar {
     display: flex;
     flex-direction: column;
+    flex: 1 5 0;
     gap: 2px;
     padding: 15px;
+    background:rgb(14, 24, 24);
 }
 .sidebar h1 {
     color: white;
@@ -201,7 +199,7 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 10px;
+    padding: 15px;
 }
 .right-content a img {
     flex-shrink: 1;
@@ -209,6 +207,14 @@ p {
 p span {
     color: salmon;
 }
+p a {
+    color: rgb(219, 72, 56);
+    text-decoration: none;
+}
+p a:hover {
+    color: rgb(255, 161, 161)
+}
 p img {
     float: right;
+    margin: 5px 18px;
 }
