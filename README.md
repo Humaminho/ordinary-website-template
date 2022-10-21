@@ -1,2 +1,3 @@
 # website-template
-practicing css
+
+Just an ordinary website, nothing to see here.
